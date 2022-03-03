@@ -375,5 +375,117 @@
     transition: all 1s;
 }
 
+.staff{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 1800px;
+    margin: auto;
+
+}
+.staff__container-title{
+    width: 100%;
+}
+.staff__title{
+    text-align: center;
+    background-color: teal;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: white;
+
+    font-family: 'Carrois Gothic SC', sans-serif;
+    letter-spacing: 0.5rem;
+
+}
+.staff__all{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 4rem 0;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.staff__article{
+    transition: all 1s;
+    animation: bounce-down 3s linear infinite;
+}
+.staff__article--mod{
+    animation: bounce-down--mod 3s linear infinite;
+}
+.staff__article:hover .staff__container{
+    transform: perspective(50rem) rotateY(180deg);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.staff__article:hover .staff__container .staff__img-container{
+    
+    filter: blur(0.1rem);
+    filter: grayscale();
+    opacity: 0.2;
+    transition: all 1.5s;
+}
+
+.staff__container{
+    background-color: black;
+    position: relative;
+    transition: all ease 1.5s;
+    transform-style: preserve-3d;
+    transform: perspective(50rem) rotateY(0deg); 
+}
+.staff__img-container{
+    width: 15rem;
+    height: 20rem;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 1.5s;
+
+}
+.staff__img{
+    width: 100%;
+}
+.staff__info-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 0.5rem;
+    position: absolute;
+    top: 0;
+    height: 88%;
+    padding: 0.5rem 0.5rem;
+    
+    transform: perspective(50rem) rotateY(180deg);
+    backface-visibility: hidden;
+    color: var(--background-body);
+    
+}
+.staff__info-title{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Zen Loop', cursive;
+    
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--background-body);
+    
+}
+.staff-info-about{
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Loop', cursive;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+}
+
 
 
