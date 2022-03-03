@@ -1,0 +1,106 @@
+:root{
+    --background-body: white;
+    --background-header: rgb(255, 255, 255);
+    --background-header-2:rgba(255, 255, 255, 0.775);
+    --text-header-color: rgb(67, 67, 67);
+    --box-shadow:rgba(67, 67, 67, 0.672);
+    --text-color:black;
+    scroll-behavior: smooth;
+}
+
+
+.body{
+    background-color: var(--background-body);
+    font-family: 'Dancing Script', cursive;
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+    z-index:1;
+}
+
+.header--scroll{
+    background-color: var(--background-header-2);
+    box-shadow: 0 0.1rem 1rem 0.2rem var(--text-header-color);
+}
+.container-nav{
+
+}
+.header-nav{
+    display: flex;
+    align-items: center;
+    
+    padding: 0 2rem;
+    height: 4rem;
+    justify-content: center;
+}
+
+.header-nav__logo-container{ 
+  width: 5rem;
+  margin: 0;
+  display: block;
+
+}
+.header-nav__logo-img{
+    width: 100%;
+    
+}
+.logo--on{
+    display: block;
+}
+.logo--off{
+    display: none;
+}
+.header-nav__container-menu-search-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    
+}
+.header-nav__list{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+    gap: 2rem;
+}
+.header-nav__link-item{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--text-header-color);
+}
+.header-nav__list-item{
+    font-size: 1rem;
+}
+.header-nav__link-item--close-icon-container{}
+.header-nav__close-icon{}
+
+.header-nav__search-input{
+    display: none;
+    border:none;
+    width: 5rem;
+    height: 1.5rem;
+    background-color: rgba(150, 149, 149, 0.556);
+    font-size: 1rem;
+    color: white;
+    /*display: none;*/  
+}
+.header-nav__search-icon{
+    color: var(--text-header-color);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.input--on{
+    transition: all 1s;
+    display: block;  
+}
+
+.header-nav__menu-icon{}
