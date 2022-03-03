@@ -526,3 +526,55 @@
 }
 
 
+@keyframes bounce-down {
+    25% {
+         transform: translateY(-10px);
+    }
+    50%, 100% {
+         transform: translateY(0);
+    }
+    75% {
+         transform: translateY(10px);
+    }
+}
+@keyframes bounce-down--mod {
+    75% {
+         transform: translateY(-10px);
+    }
+    50%, 100% {
+         transform: translateY(0);
+    }
+    25% {
+         transform: translateY(10px);
+    }
+}
+
+@media ( min-width: 700px) {
+    .header-nav{
+        place-content: space-between;
+        gap: 1rem;  
+    }
+    .section-artistas{
+        max-width: 1800px;
+        flex-wrap: nowrap;
+    }
+
+    .section-artists__info-title{
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;        
+    }
+    .section-artists-info-about{
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+    }
+    .main__title{
+        margin: 0;
+        color: white;
+        color: #131313;
+        font-size: 5rem;
+    }
+
+
+
+}
+
