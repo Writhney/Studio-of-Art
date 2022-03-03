@@ -488,4 +488,41 @@
 }
 
 
+.footer{
+    background-color: var(--text-color);
+}
+.footer__container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    max-width: 800px;
+    margin: auto;
+    justify-content: center;
+
+    height: 100vh;
+    
+    color: white;
+
+}
+.footer__title{
+    text-decoration: none;
+    margin: 0 auto;
+}
+.footer__subtitle{
+    text-decoration: none;
+    margin: 0; 
+    font-family: 'Zen Loop', cursive;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+.footer__copy{
+    text-decoration: none;
+    margin: 0;
+    font-family: 'Zen Loop', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
 
