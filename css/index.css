@@ -406,9 +406,9 @@
 
     font-family: 'Carrois Gothic SC', sans-serif;
     letter-spacing: 0.5rem;
-
 }
-.staff__all{
+
+/* .staff__all{
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -492,7 +492,7 @@
     font-size: 1.4rem;
     letter-spacing: 0.05rem;
 }
-
+ */
 
 .footer{
     background-color: var(--text-color);
