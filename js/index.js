@@ -38,7 +38,32 @@ const documentReady = () => {
     itemGallery.forEach(element => {
         observer.observe(element);
     })
+    
+    Swal.fire({
+        title: 'This is a page of a Study of Art were we show any of own projects, the kind of photos that we can make for you and also you can know our staff ♥',
+        text: 'CREATIONS',
+        imageUrl: 'https://c.tenor.com/SBA4eeEF2dwAAAAC/surprise.gif',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+    })
 
+    const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Street Style','Publicity','Artistic','BackStage'],
+                datasets: [{
+                    data: [20,50,10,30],
+                    backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(255, 205, 86)',
+                    'rgb(201, 203, 207)',
+                    'rgb(54, 162, 235)'
+                    ]
+                }]
+            }
+        });
     
 }
 document.addEventListener('DOMContentLoaded', documentReady);
