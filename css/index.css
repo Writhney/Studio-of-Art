@@ -375,6 +375,10 @@
     transform: scale(1.5);
     transition: all 1s;
 }
+/*artists*/
+
+
+
 .chart-container{
     display: flex;
     max-width: 40rem;
