@@ -14,22 +14,34 @@ function addArtists() {
     }
 }
 
-function listArtists() {
+function searchArtists() {
+    let nombreBuscar = document.getElementById("buscador").value
     let artistas = JSON.parse(localStorage.getItem('artistas'));
-    let artitasView = document.getElementById('table');
-    artitasView.innerHTML = '';
-    for (let i = 0; i < artistas.length; i++) {
-        let nombre = artistas[i].nombre;
-        let imagen = artistas[i].imagen
+    const buscado = artistas.filter(word => word.nombre == nombreBuscar);
 
-        artitasView.innerHTML += `
-        <div class="card">
-            <img src="${imagen}" alt="Avatar" style="width:30%">
-            <div class="container">
-                <h4><b>${nombre}</b></h4> 
-                <p>Architect & Engineer</p>
-            </div>
+    if (buscado.length > 0) {
+        console.log(buscado);
+        let artitasView = document.getElementById('table');
+        artitasView.innerHTML = '';
+        for (let i = 0; i < buscado.length; i++) {
+            let nombre = buscado[i].nombre;
+            let imagen = buscado[i].imagen
+
+            artitasView.innerHTML += `
+            <div class="card">
+                <img src="${imagen}" alt="Avatar" style="width:30%">
+                <div class="container">
+                    <h4><b>${nombre}</b></h4> 
+                    <p>Architect & Engineer</p>
+                </div>
+            </div>`;
+        }
+    } else {
+        let artitasView = document.getElementById('table');
+        artitasView.innerHTML = '';
+        artitasView.innerHTML +=
+            `<div>
+                <p>"No se encontraron datos!"</p>
         </div>`;
     }
 }
-listArtists()
