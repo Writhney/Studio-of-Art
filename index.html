@@ -244,12 +244,14 @@
         <h1>Artistas Famosos</h1>
         <div>
             <div>
-               <form action="#" class="artists__form">
+               <form action="#" id="formulario" name="artistsForm" class="artists__form">
                    <div>
                        <label for="">Nombre</label>
-                       <input type="text">
+                       <input type="text" id="nombre" placeholder="Ingrese su nombre" class="home__form--input" required />
+                       <label for="">Imagen</label>
+                       <input type="text" id="imagen" placeholder="Ingrese un cuadro" class="home__form--input" required />
                    </div>
-                   <button>Agregar</button>
+                   <button onclick="addArtists()">Guardar</button>
                </form>
             </div>
             <div>
@@ -260,7 +262,7 @@
             </div>
             <div>
                 <h2>Resultado</h2>
-                <div class="">
+                <div id = "table">
 
                 </div>
             </div>
@@ -405,6 +407,8 @@
     <!-- glider -->
 	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <!-- js -->
+    <script src="./js/artists.js"></script>
+
     <script src="./js/carousel.js" type="module"></script>
 
     <script src="./js/index.js" type="module"></script>
@@ -412,6 +416,7 @@
     
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 </body>
 
