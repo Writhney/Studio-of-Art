@@ -29,7 +29,7 @@ function searchArtists() {
 
             artitasView.innerHTML += `
             <div class="card">
-                <img src="${imagen}" alt="Avatar" style="width:30%">
+                <img src="${imagen}" alt="Avatar" style="width:100%">
                 <div class="container">
                     <h4><b>${nombre}</b></h4> 
                     <p>Architect & Engineer</p>

@@ -19,7 +19,7 @@ const documentReady = () => {
     iconSearch.addEventListener('click',inputOn);
 
     window.onresize = () => {
-        /*logoContainer.classList.toggle('logo--off', window.innerWidth < 700);*/
+        logoContainer.classList.toggle('logo--off', window.innerWidth < 700);
     }
 
     const inputItemGallery = (input, observe)=> {
@@ -39,14 +39,14 @@ const documentReady = () => {
         observer.observe(element);
     })
     
-    /*Swal.fire({
+    Swal.fire({
         title: 'This is a page of a Study of Art were we show any of own projects, the kind of photos that we can make for you and also you can know our staff ♥',
         text: 'CREATIONS',
         imageUrl: 'https://c.tenor.com/SBA4eeEF2dwAAAAC/surprise.gif',
         imageWidth: 400,
         imageHeight: 200,
         imageAlt: 'Custom image',
-    })*/
+    })
 
     const ctx = document.getElementById('myChart').getContext('2d');
         const myChart = new Chart(ctx, {
