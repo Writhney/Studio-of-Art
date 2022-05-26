@@ -372,7 +372,7 @@
 }
 
 .projects__project--img-3 {
-  background-image: url("https://i.postimg.cc/bJd4cmmz/creative.jpg");
+  background-image: url(https://i.postimg.cc/bJd4cmmz/creative.jpg);
 }
 
 .projects__project--img-4 {
@@ -527,77 +527,9 @@
   letter-spacing: 0.5rem;
 }
 
-/* --- --- CAROUSEL --- --- */
 
-.carousel {
-  max-width: 1200px;
-  width: 80%;
-  margin: auto;
-}
 
-.carousel__contenedor {
-  position: relative;
-  width: 100%;
-}
-
-.carousel__anterior,
-.carousel__siguiente {
-  position: absolute;
-  display: block;
-  width: 30px;
-  height: 30px;
-  border: none;
-  top: calc(50% - 35px);
-  cursor: pointer;
-  line-height: 30px;
-  text-align: center;
-  background: none;
-  color: teal;
-  opacity: 80%;
-}
-
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-  opacity: 100%;
-}
-
-.carousel__anterior {
-  left: -30px;
-}
-
-.carousel__siguiente {
-  right: -30px;
-}
-
-.carousel__lista {
-  overflow: hidden;
-  font-family: "Dancing Script", cursive;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.carousel__elemento {
-  text-align: center;
-}
-
-.carousel__indicadores .glider-dot {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background: #fff;
-  opacity: 0.2;
-  border-radius: 0;
-}
-
-.carousel__indicadores .glider-dot:hover {
-  opacity: 0.5;
-}
-
-.carousel__indicadores .glider-dot.active {
-  opacity: 1;
-}
-
-/* .staff__all{
+ .staff__all{
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -634,8 +566,8 @@
     transform: perspective(50rem) rotateY(0deg); 
 }
 .staff__img-container{
-    width: 15rem;
-    height: 20rem;
+    width: 10rem;
+    height: 15rem;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -643,6 +575,8 @@
 
 }
 .staff__img{
+    height: 100%;
+    object-fit: cover;
     width: 100%;
 }
 .staff__info-container{
@@ -656,6 +590,7 @@
     position: absolute;
     top: 0;
     height: 88%;
+    width: 90%;
     padding: 0.5rem 0.5rem;
     
     transform: perspective(50rem) rotateY(180deg);
@@ -663,13 +598,16 @@
     color: var(--background-body);
     
 }
+.staff__info-line{
+  width: 130px;
+}
 .staff__info-title{
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'Zen Loop', cursive;
     
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: var(--background-body);
     
@@ -678,10 +616,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Zen Loop', cursive;
-    font-size: 1.4rem;
+    font-size: 1rem;
     letter-spacing: 0.05rem;
 }
- */
+ 
 
 .footer {
   background-color: var(--text-color);
@@ -780,5 +718,19 @@
     color: white;
     color: #131313;
     font-size: 5rem;
+  }
+  .staff__img-container{
+    width: 15rem;
+    height: 20rem;
+  }
+  .staff__info-title{
+    font-size: 2rem;
+  }
+  .staff__info-line{
+    width: 200px;
+  }
+  .staff-info-about{
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
   }
 }
