@@ -40,13 +40,17 @@ const documentReady = () => {
     })
     
     Swal.fire({
-        title: 'This is a page of a Study of Art were we show any of own projects, the kind of photos that we can make for you and also you can know our staff ♥',
+        title: 'This is a page of a Studio of Art were we show any of own projects, the kind of photos that we can make for you and also you can know our staff ♥',
         text: 'CREATIONS',
         imageUrl: 'https://c.tenor.com/SBA4eeEF2dwAAAAC/surprise.gif',
         imageWidth: 400,
         imageHeight: 200,
+        color: '#4d4d4d',
+        background: '#ecebeb93',
         imageAlt: 'Custom image',
-    })
+    }
+    
+    )
 
     const ctx = document.getElementById('myChart').getContext('2d');
         const myChart = new Chart(ctx, {
