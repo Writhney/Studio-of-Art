@@ -633,7 +633,7 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   padding: 1rem 1rem;
   max-width: 800px;
   margin: auto;
@@ -656,6 +656,29 @@
   font-family: "Zen Loop", cursive;
   letter-spacing: 0.1rem;
   text-align: center;
+}
+
+
+.footer-container-links{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.footer__link-icon-container {
+  display: flex;
+  transition: all 0.5s;
+  max-width: 2rem;
+}
+
+.footer__link-icon-container:hover {
+  transform: scale(1.25);
+}
+
+.footer__link-icon {
+  width: 100%;
+  filter: invert();
 }
 
 .footer__copy {
