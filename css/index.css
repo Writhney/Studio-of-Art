@@ -452,7 +452,7 @@
 .table {
   display: flex;
   justify-content: space-around;
-  padding: 80px;
+  padding: 10px;
 }
 
 .card {
