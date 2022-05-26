@@ -368,7 +368,7 @@
 }
 
 .projects__project--img-2 {
-  background-image: url(https://format-com-cld-res.cloudinary.com/image/private/s--BekdKdl5--/c_limit,g_center,h_65535,w_1600/fl_keep_iptc.progressive,q_95/v1/2f6bcd0d8870a3e9532352b9fdab266b/Alani_060320_264-1_final.jpg);
+  background-image: url(https://static.livebooks.com/b37519a4ba72419f87d4858d8214a488/i/afde32f84f2244ae943de3fd0405e1d2/1/4SoifmQp45JMgBnHqdenx/StrawberryMilkThrow.jpg);
 }
 
 .projects__project--img-3 {
@@ -542,9 +542,11 @@
 .staff__article{
     transition: all 1s;
     animation: bounce-down 3s linear infinite;
+    
 }
 .staff__article--mod{
     animation: bounce-down--mod 3s linear infinite;
+  
 }
 .staff__article:hover .staff__container{
     transform: perspective(50rem) rotateY(180deg);
@@ -564,6 +566,9 @@
     transition: all ease 1.5s;
     transform-style: preserve-3d;
     transform: perspective(50rem) rotateY(0deg); 
+    box-shadow: 10px -10px 5px 0px rgba(0,0,0,0.75);
+    
+    
 }
 .staff__img-container{
     width: 10rem;
